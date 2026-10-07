@@ -1,0 +1,20 @@
+# Node
+node_modules/
+.npm/
+
+# Python venv
+.venv/
+__pycache__/
+*.pyc
+
+# Caches do Marp
+.marp/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.swp
+*.tmp

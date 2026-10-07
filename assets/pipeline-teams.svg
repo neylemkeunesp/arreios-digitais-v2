@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="-apple-system,system-ui,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e1e2e"/>
+      <stop offset="1" stop-color="#181825"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#89b4fa"/>
+    </marker>
+    <marker id="arrDiag" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#cba6f7"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="600" fill="url(#bg)"/>
+
+  <!-- título -->
+  <text x="40" y="44" fill="#cdd6f4" font-size="20" font-weight="600">Pipeline Teams (fluxo macro)</text>
+  <text x="40" y="66" fill="#a6adc8" font-size="13">Da reunião ao Telegram, sem intervenção humana</text>
+
+  <!-- Grid 3x2: cards 280x100, gaps 40x40 -->
+  <!-- Linha 1: y=110 -->
+  <!-- Linha 2: y=320 -->
+
+  <!-- Card 1 -->
+  <rect x="60"  y="110" width="280" height="100" rx="10" fill="#313244" stroke="#89b4fa"   stroke-width="2"/>
+  <text x="90"  y="148" fill="#89b4fa"   font-size="26" font-weight="700">1</text>
+  <text x="125" y="142" fill="#cdd6f4"   font-size="15" font-weight="700">reunião Teams</text>
+  <text x="125" y="162" fill="#a6adc8"  font-size="12">1h de áudio + chat</text>
+  <text x="125" y="180" fill="#a6adc8"  font-size="11" font-style="italic">input humano</text>
+
+  <!-- Card 2 -->
+  <rect x="380" y="110" width="280" height="100" rx="10" fill="#313244" stroke="#cba6f7"  stroke-width="2"/>
+  <text x="410" y="148" fill="#cba6f7"  font-size="26" font-weight="700">2</text>
+  <text x="445" y="142" fill="#cdd6f4"   font-size="15" font-weight="700">bot Teams (Herald)</text>
+  <text x="445" y="162" fill="#a6adc8"  font-size="12">captura áudio e transcrição</text>
+  <text x="445" y="180" fill="#a6adc8"  font-size="11" font-style="italic">agent automatizado</text>
+
+  <!-- Card 3 -->
+  <rect x="700" y="110" width="280" height="100" rx="10" fill="#313244" stroke="#94e2d5"   stroke-width="2"/>
+  <text x="730" y="148" fill="#94e2d5"   font-size="26" font-weight="700">3</text>
+  <text x="765" y="142" fill="#cdd6f4"   font-size="15" font-weight="700">transcrição automática</text>
+  <text x="765" y="162" fill="#a6adc8"  font-size="12">Whisper + diarização</text>
+  <text x="765" y="180" fill="#a6adc8"  font-size="11" font-style="italic">modelo local</text>
+
+  <!-- Setas horizontais (linha 1) -->
+  <line x1="340" y1="160" x2="378" y2="160" stroke="#89b4fa" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="660" y1="160" x2="698" y2="160" stroke="#89b4fa" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- Seta diagonal (3 → 4): desce do card 3 para o card 4 -->
+  <path d="M 840 210 Q 840 280 240 320" fill="none" stroke="#cba6f7" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arrDiag)"/>
+  <text x="540" y="280" text-anchor="middle" fill="#cba6f7" font-size="11" font-style="italic">continua →</text>
+
+  <!-- Card 4 -->
+  <rect x="60"  y="320" width="280" height="100" rx="10" fill="#313244" stroke="#f9e2af" stroke-width="2"/>
+  <text x="90"  y="358" fill="#f9e2af" font-size="26" font-weight="700">4</text>
+  <text x="125" y="352" fill="#cdd6f4"   font-size="15" font-weight="700">meeting-action-items</text>
+  <text x="125" y="372" fill="#a6adc8"  font-size="12">extrai decisões e tasks</text>
+  <text x="125" y="390" fill="#a6adc8"  font-size="11" font-style="italic">skill Hermes</text>
+
+  <!-- Card 5 -->
+  <rect x="380" y="320" width="280" height="100" rx="10" fill="#313244" stroke="#fab387"  stroke-width="2"/>
+  <text x="410" y="358" fill="#fab387"  font-size="26" font-weight="700">5</text>
+  <text x="445" y="352" fill="#cdd6f4"   font-size="15" font-weight="700">cria cards no Notion</text>
+  <text x="445" y="372" fill="#a6adc8"  font-size="12">board institucional</text>
+  <text x="445" y="390" fill="#a6adc8"  font-size="11" font-style="italic">integração externa</text>
+
+  <!-- Card 6 -->
+  <rect x="700" y="320" width="280" height="100" rx="10" fill="#313244" stroke="#a6e3a1"  stroke-width="2"/>
+  <text x="730" y="358" fill="#a6e3a1"  font-size="26" font-weight="700">6</text>
+  <text x="765" y="352" fill="#cdd6f4"   font-size="15" font-weight="700">notifica via Telegram</text>
+  <text x="765" y="372" fill="#a6adc8"  font-size="12">lembrete diário às 8h</text>
+  <text x="765" y="390" fill="#a6adc8"  font-size="11" font-style="italic">output ao usuário</text>
+
+  <!-- Setas horizontais (linha 2) -->
+  <line x1="340" y1="370" x2="378" y2="370" stroke="#89b4fa" stroke-width="3" marker-end="url(#arr)"/>
+  <line x1="660" y1="370" x2="698" y2="370" stroke="#89b4fa" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- Faixa destaque no rodapé -->
+  <rect x="60"  y="465" width="880" height="42" rx="21" fill="#313244" stroke="#a6e3a1" stroke-width="2"/>
+  <text x="500" y="492" text-anchor="middle" fill="#a6e3a1" font-size="15" font-weight="700">Roda sozinho 24/7 · zero intervenção humana</text>
+
+  <!-- Legenda do canto: cores = tipos de componente -->
+  <g font-size="10" fill="#a6adc8">
+    <rect x="60"  y="540" width="14" height="14" rx="3" fill="#89b4fa"/>
+    <text x="80"  y="551">input humano</text>
+    <rect x="200" y="540" width="14" height="14" rx="3" fill="#cba6f7"/>
+    <text x="220" y="551">agent</text>
+    <rect x="290" y="540" width="14" height="14" rx="3" fill="#94e2d5"/>
+    <text x="310" y="551">modelo local</text>
+    <rect x="420" y="540" width="14" height="14" rx="3" fill="#f9e2af"/>
+    <text x="440" y="551">skill</text>
+    <rect x="510" y="540" width="14" height="14" rx="3" fill="#fab387"/>
+    <text x="530" y="551">integração</text>
+    <rect x="620" y="540" width="14" height="14" rx="3" fill="#a6e3a1"/>
+    <text x="640" y="551">output</text>
+  </g>
+</svg>

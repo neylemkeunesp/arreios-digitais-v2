@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" font-family="-apple-system,system-ui,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e1e2e"/>
+      <stop offset="1" stop-color="#181825"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#89b4fa"/></marker>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg)"/>
+
+  <text x="40" y="36" fill="#cdd6f4" font-size="18" font-weight="600">O loop de melhoria continua</text>
+  <text x="40" y="58" fill="#a6adc8" font-size="13">3 caminhos convergem: GEPA, manual, auto</text>
+
+  <rect x="350" y="90" width="200" height="42" rx="21" fill="#313244" stroke="#89b4fa" stroke-width="2"/>
+  <text x="450" y="117" text-anchor="middle" fill="#cdd6f4" font-size="13" font-weight="700">1. tarefa nova</text>
+  <line x1="450" y1="132" x2="450" y2="160" stroke="#89b4fa" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <rect x="350" y="166" width="200" height="42" rx="21" fill="#313244" stroke="#cba6f7" stroke-width="2"/>
+  <text x="450" y="193" text-anchor="middle" fill="#cdd6f4" font-size="13" font-weight="700">2. Hermes tenta</text>
+  <line x1="450" y1="208" x2="450" y2="236" stroke="#89b4fa" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <rect x="350" y="242" width="200" height="42" rx="21" fill="#313244" stroke="#f9e2af" stroke-width="2"/>
+  <text x="450" y="269" text-anchor="middle" fill="#cdd6f4" font-size="13" font-weight="700">3. descobre pitfall</text>
+  <line x1="450" y1="284" x2="450" y2="312" stroke="#89b4fa" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- 3 caminhos paralelos -->
+  <text x="40" y="345" fill="#a6adc8" font-size="12" font-weight="600">3 caminhos paralelos:</text>
+
+  <rect x="40" y="350" width="240" height="50" rx="8" fill="#313244" stroke="#94e2d5" stroke-width="2"/>
+  <text x="160" y="382" text-anchor="middle" fill="#94e2d5" font-size="13" font-weight="700">GEPA: evolui skill offline</text>
+
+  <rect x="310" y="350" width="240" height="50" rx="8" fill="#313244" stroke="#fab387" stroke-width="2"/>
+  <text x="430" y="382" text-anchor="middle" fill="#fab387" font-size="13" font-weight="700">Manual: PR com a correcao</text>
+
+  <rect x="580" y="350" width="240" height="50" rx="8" fill="#313244" stroke="#a6e3a1" stroke-width="2"/>
+  <text x="700" y="382" text-anchor="middle" fill="#a6e3a1" font-size="13" font-weight="700">Auto: >=5 tool calls</text>
+
+  <line x1="400" y1="284" x2="160" y2="350" stroke="#94e2d5" stroke-width="2"/>
+  <line x1="430" y1="284" x2="430" y2="350" stroke="#fab387" stroke-width="2"/>
+  <line x1="460" y1="284" x2="700" y2="350" stroke="#a6e3a1" stroke-width="2"/>
+
+  <line x1="280" y1="400" x2="430" y2="430" stroke="#89b4fa" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="550" y1="400" x2="470" y2="430" stroke="#89b4fa" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="820" y1="400" x2="490" y2="430" stroke="#89b4fa" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="350" y="430" width="200" height="42" rx="21" fill="#313244" stroke="#a6e3a1" stroke-width="2.5"/>
+  <text x="450" y="457" text-anchor="middle" fill="#a6e3a1" font-size="13" font-weight="700">4. proxima vez: resolve</text>
+</svg>

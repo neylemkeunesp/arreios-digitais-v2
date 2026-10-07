@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="-apple-system,system-ui,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e1e2e"/>
+      <stop offset="1" stop-color="#181825"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#cba6f7"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="560" fill="url(#bg)"/>
+
+  <text x="40" y="36" fill="#cdd6f4" font-size="19" font-weight="600">Cadeia 100% software livre · do silício ao bot</text>
+  <text x="40" y="58" fill="#a6adc8" font-size="12">SO + LLM + Arreio + Apps + Bots — tudo customizável, orquestrado, auditável</text>
+
+  <g font-size="13">
+    <rect x="40"  y="86"  width="920" height="58" rx="10" fill="#313244" stroke="#89b4fa"   stroke-width="2.5"/>
+    <text x="60"  y="110" fill="#89b4fa"   font-weight="700" font-size="16">1. SISTEMA OPERACIONAL</text>
+    <text x="280" y="110" fill="#cdd6f4"   font-weight="600">Omarchy 4.0.1</text>
+    <text x="450" y="110" fill="#a6adc8"  font-size="11">Arch Linux · kernel 7.x · Hyprland · BTRFS</text>
+    <text x="60"  y="130" fill="#a6adc8"  font-size="11">▸ controle total: drivers, dotfiles, services, snapshots</text>
+    <text x="500" y="130" fill="#a6e3a1"  font-size="11" font-weight="600">100% livre (MIT/BSD/GPL)</text>
+
+    <rect x="40"  y="154" width="920" height="58" rx="10" fill="#313244" stroke="#94e2d5"   stroke-width="2.5"/>
+    <text x="60"  y="178" fill="#94e2d5"   font-weight="700" font-size="16">2. MODELO DE LINGUAGEM</text>
+    <text x="280" y="178" fill="#cdd6f4"   font-weight="600">Claude-Unesp / local</text>
+    <text x="450" y="178" fill="#a6adc8"  font-size="11">llm.tools.unesp.br · Ollama · vLLM</text>
+    <text x="60"  y="198" fill="#a6adc8"  font-size="11">▸ modelo aberto ou self-hosted · pesos inspecionáveis</text>
+    <text x="500" y="198" fill="#a6e3a1"  font-size="11" font-weight="600">open weights</text>
+
+    <rect x="40"  y="222" width="920" height="58" rx="10" fill="#313244" stroke="#cba6f7" stroke-width="2.5"/>
+    <text x="60"  y="246" fill="#cba6f7"  font-weight="700" font-size="16">3. ARREIO (harness)</text>
+    <text x="280" y="246" fill="#cdd6f4"   font-weight="600">Hermes Agent</text>
+    <text x="450" y="246" fill="#a6adc8"  font-size="11">Nous Research · MIT · agentskills.io</text>
+    <text x="60"  y="266" fill="#a6adc8"  font-size="11">▸ orquestra modelo + tools + skills + memória</text>
+    <text x="500" y="266" fill="#a6e3a1"  font-size="11" font-weight="600">MIT</text>
+
+    <rect x="40"  y="290" width="920" height="58" rx="10" fill="#313244" stroke="#f9e2af" stroke-width="2.5"/>
+    <text x="60"  y="314" fill="#f9e2af" font-weight="700" font-size="16">4. APPS</text>
+    <text x="280" y="314" fill="#cdd6f4"   font-weight="600">Notion / GWS / GitHub / Teams / BTRFS</text>
+    <text x="60"  y="334" fill="#a6adc8"  font-size="11">▸ instalam via pacman/AUR/flatpak · integrações via CLI/webhook</text>
+    <text x="500" y="334" fill="#a6e3a1"  font-size="11" font-weight="600">open source</text>
+
+    <rect x="40"  y="358" width="920" height="58" rx="10" fill="#313244" stroke="#a6e3a1"  stroke-width="2.5"/>
+    <text x="60"  y="382" fill="#a6e3a1"  font-weight="700" font-size="16">5. BOTS</text>
+    <text x="280" y="382" fill="#cdd6f4"   font-weight="600">@yenclawreitoriabot · perfis (linus/montaigne/...)</text>
+    <text x="60"  y="402" fill="#a6adc8"  font-size="11">▸ criados/treinados em runtime · orquestrados pelo arreio</text>
+    <text x="500" y="402" fill="#a6e3a1"  font-size="11" font-weight="600">gerados por você</text>
+  </g>
+
+  <g stroke="#cba6f7" stroke-width="2" fill="none">
+    <line x1="500" y1="144" x2="500" y2="153" marker-end="url(#arr)"/>
+    <line x1="500" y1="212" x2="500" y2="221" marker-end="url(#arr)"/>
+    <line x1="500" y1="280" x2="500" y2="289" marker-end="url(#arr)"/>
+    <line x1="500" y1="348" x2="500" y2="357" marker-end="url(#arr)"/>
+  </g>
+
+  <rect x="40"  y="450" width="920" height="80" rx="10" fill="#313244" stroke="#f5c2e7" stroke-width="2"/>
+  <text x="60"  y="476" fill="#f5c2e7"  font-size="13" font-weight="700">Por que isso importa?</text>
+  <text x="60"  y="496" fill="#cdd6f4"  font-size="12">Cada camada é auditável, substituível e customizável.</text>
+  <text x="60"  y="513" fill="#cdd6f4"  font-size="12">Nenhum fornecedor aprisiona o seu fluxo.</text>
+  <text x="60"  y="528" fill="#a6adc8" font-size="10" font-style="italic">ChatGPT herda decisões de uma empresa. 5 camadas livres herda soberania.</text>
+</svg>

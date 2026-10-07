@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600" font-family="-apple-system,system-ui,sans-serif">
+  <defs>
+    <linearGradient id="tg-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17212b"/>
+      <stop offset="1" stop-color="#0e1621"/>
+    </linearGradient>
+    <linearGradient id="bubble-out" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b5278"/>
+      <stop offset="1" stop-color="#3a6ea5"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="600" fill="url(#tg-bg)"/>
+
+  <!-- header -->
+  <rect width="700" height="64" fill="#17212b"/>
+  <text x="84" y="30" fill="#ffffff" font-size="16" font-weight="600">Yenclawreitoria</text>
+  <text x="84" y="50" fill="#7c8a99" font-size="13">bot · online agora</text>
+  <circle cx="44" cy="32" r="22" fill="#5e81ac"/>
+  <text x="44" y="38" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">Y</text>
+
+  <!-- date divider -->
+  <rect x="280" y="84" width="140" height="26" rx="13" fill="#1d2731"/>
+  <text x="350" y="102" text-anchor="middle" fill="#7c8a99" font-size="12">28 de setembro</text>
+
+  <!-- user msg 1 -->
+  <rect x="120" y="130" width="500" height="46" rx="14" fill="url(#bubble-out)"/>
+  <text x="140" y="158" fill="#ffffff" font-size="15">veja se o telegra, esta no ar</text>
+  <text x="606" y="172" text-anchor="end" fill="#9ec3e6" font-size="11">18:46 ✓✓</text>
+
+  <!-- bot response 1 (diagnostico real) -->
+  <rect x="80" y="194" width="540" height="170" rx="14" fill="#182533"/>
+  <text x="100" y="222" fill="#ffffff" font-size="14" font-weight="600"># O Telegram: status misto</text>
+  <text x="100" y="246" fill="#a8c5e0" font-size="13">• telegram.org → 200 OK (~1,15s)</text>
+  <text x="100" y="266" fill="#a8c5e0" font-size="13">• web.telegram.org → 200 OK</text>
+  <text x="100" y="286" fill="#f9a3a3" font-size="13">• 149.154.175.50 → TLS fail</text>
+  <text x="100" y="306" fill="#a8c5e0" font-size="13">• 91.108.56.130 → TLS fail</text>
+  <text x="100" y="330" fill="#7c8a99" font-size="12" font-style="italic">Sites publicos no ar · DCs diretos bloqueados (geografia)</text>
+
+  <!-- user msg 2 -->
+  <rect x="120" y="384" width="280" height="40" rx="14" fill="url(#bubble-out)"/>
+  <text x="140" y="409" fill="#ffffff" font-size="15">e o nosso bot, esta respondendo?</text>
+  <text x="386" y="420" text-anchor="end" fill="#9ec3e6" font-size="11">18:47 ✓✓</text>
+
+  <!-- bot response 2 -->
+  <rect x="80" y="442" width="540" height="92" rx="14" fill="#182533"/>
+  <text x="100" y="470" fill="#a6e3a1" font-size="14" font-weight="600">● conectado e saudavel</text>
+  <text x="100" y="492" fill="#a8c5e0" font-size="13">@yenclawreitoriabot · DC 149.154.166.110</text>
+  <text x="100" y="510" fill="#a8c5e0" font-size="13">polling ok · 60 comandos registrados</text>
+  <text x="100" y="528" fill="#7c8a99" font-size="11" font-style="italic">Mande /help se quiser ver a lista</text>
+</svg>

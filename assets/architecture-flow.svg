@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" font-family="-apple-system,system-ui,sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e1e2e"/>
+      <stop offset="1" stop-color="#181825"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#89b4fa"/>
+    </marker>
+    <marker id="arrowPeach" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#fab387"/>
+    </marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94e2d5"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="380" fill="url(#bg3)"/>
+
+  <!-- title -->
+  <text x="40" y="36" fill="#cdd6f4" font-size="18" font-weight="600">Harness flow</text>
+  <text x="40" y="58" fill="#a6adc8" font-size="13">Input → 6 canais → gateway → harness → modelo → ferramentas → resposta</text>
+
+  <!-- 6 canais (cluster) -->
+  <rect x="40" y="100" width="100" height="100" rx="10" fill="#313244" stroke="#89b4fa" stroke-width="2"/>
+  <text x="90" y="130" text-anchor="middle" fill="#89b4fa" font-size="14" font-weight="700">6 canais</text>
+  <text x="90" y="152" text-anchor="middle" fill="#cdd6f4" font-size="11">Telegram</text>
+  <text x="90" y="170" text-anchor="middle" fill="#cdd6f4" font-size="11">Slack/Discord</text>
+  <text x="90" y="188" text-anchor="middle" fill="#cdd6f4" font-size="11">WhatsApp/Signal</text>
+
+  <!-- Gateway -->
+  <rect x="180" y="100" width="110" height="100" rx="10" fill="#313244" stroke="#94e2d5" stroke-width="2"/>
+  <text x="235" y="135" text-anchor="middle" fill="#94e2d5" font-size="14" font-weight="700">Gateway</text>
+  <text x="235" y="158" text-anchor="middle" fill="#cdd6f4" font-size="11">multiplex</text>
+  <text x="235" y="180" text-anchor="middle" fill="#cdd6f4" font-size="11">webhooks</text>
+  <text x="235" y="196" text-anchor="middle" fill="#a6adc8" font-size="10" font-style="italic">8 canais</text>
+
+  <!-- Harness -->
+  <rect x="330" y="100" width="120" height="100" rx="10" fill="#313244" stroke="#cba6f7" stroke-width="2.5"/>
+  <text x="390" y="135" text-anchor="middle" fill="#cba6f7" font-size="14" font-weight="700">Harness</text>
+  <text x="390" y="158" text-anchor="middle" fill="#cdd6f4" font-size="11">modelo + tools</text>
+  <text x="390" y="180" text-anchor="middle" fill="#cdd6f4" font-size="11">+ skills + ctx</text>
+  <text x="390" y="196" text-anchor="middle" fill="#a6adc8" font-size="10" font-style="italic">orquestra</text>
+
+  <!-- Modelo -->
+  <rect x="490" y="100" width="120" height="100" rx="10" fill="#313244" stroke="#89b4fa" stroke-width="2"/>
+  <text x="550" y="135" text-anchor="middle" fill="#89b4fa" font-size="14" font-weight="700">Modelo</text>
+  <text x="550" y="158" text-anchor="middle" fill="#cdd6f4" font-size="11">Claude-Unesp</text>
+  <text x="550" y="180" text-anchor="middle" fill="#cdd6f4" font-size="11">ou local</text>
+
+  <!-- Ferramentas -->
+  <rect x="650" y="100" width="130" height="100" rx="10" fill="#313244" stroke="#a6e3a1" stroke-width="2"/>
+  <text x="715" y="135" text-anchor="middle" fill="#a6e3a1" font-size="14" font-weight="700">Ferramentas</text>
+  <text x="715" y="158" text-anchor="middle" fill="#cdd6f4" font-size="11">terminal, browser</text>
+  <text x="715" y="180" text-anchor="middle" fill="#cdd6f4" font-size="11">MCP, file edit</text>
+
+  <!-- Resposta -->
+  <rect x="820" y="100" width="140" height="100" rx="10" fill="#313244" stroke="#fab387" stroke-width="2.5"/>
+  <text x="890" y="135" text-anchor="middle" fill="#fab387" font-size="14" font-weight="700">Resposta</text>
+  <text x="890" y="158" text-anchor="middle" fill="#cdd6f4" font-size="11">texto, voz,</text>
+  <text x="890" y="180" text-anchor="middle" fill="#cdd6f4" font-size="11">imagem, ação</text>
+
+  <!-- Arrows horizontais (fluxo principal) -->
+  <line x1="140" y1="150" x2="178" y2="150" stroke="#89b4fa" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="290" y1="150" x2="328" y2="150" stroke="#89b4fa" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="150" x2="488" y2="150" stroke="#89b4fa" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="610" y1="150" x2="648" y2="150" stroke="#89b4fa" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="780" y1="150" x2="818" y2="150" stroke="#89b4fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- "você" label (input) -->
+  <rect x="40" y="220" width="100" height="36" rx="18" fill="#45475a"/>
+  <text x="90" y="244" text-anchor="middle" fill="#cdd6f4" font-size="14" font-weight="600">você</text>
+  <line x1="90" y1="220" x2="90" y2="202" stroke="#89b4fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Memory (3 tiers) — canto inferior esquerdo -->
+  <rect x="40" y="300" width="120" height="50" rx="8" fill="#313244" stroke="#94e2d5" stroke-width="2"/>
+  <text x="100" y="324" text-anchor="middle" fill="#94e2d5" font-size="13" font-weight="700">Memory</text>
+  <text x="100" y="342" text-anchor="middle" fill="#a6adc8" font-size="11">3 tiers</text>
+
+  <!-- Skills (agentskills.io) — centro inferior -->
+  <rect x="200" y="300" width="120" height="50" rx="8" fill="#313244" stroke="#fab387" stroke-width="2"/>
+  <text x="260" y="324" text-anchor="middle" fill="#fab387" font-size="13" font-weight="700">Skills</text>
+  <text x="260" y="342" text-anchor="middle" fill="#a6adc8" font-size="11">agentskills.io</text>
+
+  <!-- Feedback Memory → Harness (cor teal) -->
+  <!-- Origem: topo do Memory (x=100, y=300) -->
+  <!-- Destino: lateral inferior do Harness (x=350, y=200) -->
+  <path d="M 100 300 C 100 230 250 200 348 200" fill="none" stroke="#94e2d5" stroke-width="2.5" marker-end="url(#arrowTeal)"/>
+  <text x="180" y="244" fill="#94e2d5" font-size="11" font-weight="600">alimenta</text>
+
+  <!-- Feedback Skills → Harness (cor peach) -->
+  <!-- Origem: topo do Skills (x=260, y=300) -->
+  <!-- Destino: lateral inferior do Harness (x=380, y=200) -->
+  <path d="M 260 300 C 260 240 320 200 378 200" fill="none" stroke="#fab387" stroke-width="2.5" marker-end="url(#arrowPeach)"/>
+  <text x="285" y="262" fill="#fab387" font-size="11" font-weight="600">carrega</text>
+</svg>

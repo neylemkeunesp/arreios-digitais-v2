@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" font-family="ui-monospace,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="1" stop-color="#0a0e14"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bg1)"/>
+  <!-- title bar -->
+  <rect width="900" height="32" fill="#161b22"/>
+  <circle cx="18" cy="16" r="6" fill="#ff5f56"/>
+  <circle cx="38" cy="16" r="6" fill="#ffbd2e"/>
+  <circle cx="58" cy="16" r="6" fill="#27c93f"/>
+  <text x="450" y="20" text-anchor="middle" fill="#f0f6fc" font-size="12" font-weight="600">Telegram Bot API · @yenclawreitoriabot</text>
+
+  <!-- prompt -->
+  <text x="24" y="68" fill="#79c0ff" font-size="15" font-weight="600">$</text>
+  <text x="44" y="68" fill="#ffffff" font-size="15" font-weight="500">curl -s</text>
+  <text x="106" y="68" fill="#ffa657" font-size="15" font-weight="500">"https://api.telegram.org/bot$TOKEN/getUpdates"</text>
+  <text x="24" y="94" fill="#d0d7de" font-size="14">  | jq '.result[].message | {from: .from.first_name, text: .text, date: .date}'</text>
+
+  <!-- separator -->
+  <line x1="24" y1="112" x2="876" y2="112" stroke="#484f58" stroke-width="1.5"/>
+
+  <!-- response header -->
+  <text x="24" y="142" fill="#56d364" font-size="14" font-weight="600">{</text>
+  <text x="40" y="142" fill="#d0d7de" font-size="14">"ok":</text>
+  <text x="84" y="142" fill="#79c0ff" font-size="14" font-weight="600">true</text>
+  <text x="124" y="142" fill="#d0d7de" font-size="14">,</text>
+  <text x="138" y="142" fill="#d0d7de" font-size="14">"result":</text>
+  <text x="200" y="142" fill="#56d364" font-size="14" font-weight="600">[</text>
+
+  <!-- message card -->
+  <rect x="56" y="158" width="800" height="130" fill="#161b22" stroke="#30363d" stroke-width="1.5" rx="6"/>
+  <text x="76" y="184" fill="#d0d7de" font-size="13">{</text>
+  <text x="96" y="184" fill="#d0d7de" font-size="13">"message_id":</text>
+  <text x="206" y="184" fill="#79c0ff" font-size="13" font-weight="600">142</text>
+  <text x="234" y="184" fill="#d0d7de" font-size="13">,</text>
+  <text x="96" y="208" fill="#d0d7de" font-size="13">"from":</text>
+  <text x="152" y="208" fill="#56d364" font-size="13">{</text>
+  <text x="164" y="208" fill="#ffa657" font-size="13">"id"</text>
+  <text x="190" y="208" fill="#d0d7de" font-size="13">:</text>
+  <text x="202" y="208" fill="#79c0ff" font-size="13" font-weight="600">6505309021</text>
+  <text x="290" y="208" fill="#d0d7de" font-size="13">,</text>
+  <text x="302" y="208" fill="#ffa657" font-size="13">"first_name"</text>
+  <text x="380" y="208" fill="#d0d7de" font-size="13">:</text>
+  <text x="392" y="208" fill="#a5d6ff" font-size="13" font-weight="600">"Ney"</text>
+  <text x="430" y="208" fill="#56d364" font-size="13">}</text>
+  <text x="442" y="208" fill="#d0d7de" font-size="13">,</text>
+  <text x="96" y="232" fill="#d0d7de" font-size="13">"chat":</text>
+  <text x="146" y="232" fill="#56d364" font-size="13">{</text>
+  <text x="158" y="232" fill="#ffa657" font-size="13">"type"</text>
+  <text x="200" y="232" fill="#d0d7de" font-size="13">:</text>
+  <text x="212" y="232" fill="#a5d6ff" font-size="13" font-weight="600">"private"</text>
+  <text x="266" y="232" fill="#56d364" font-size="13">}</text>
+  <text x="278" y="232" fill="#d0d7de" font-size="13">,</text>
+  <text x="96" y="256" fill="#d0d7de" font-size="13">"text":</text>
+  <text x="142" y="256" fill="#a5d6ff" font-size="14" font-weight="600">"/help"</text>
+  <text x="76" y="280" fill="#d0d7de" font-size="13">}</text>
+
+  <text x="56" y="310" fill="#56d364" font-size="14" font-weight="600">]</text>
+  <text x="40" y="334" fill="#56d364" font-size="14" font-weight="600">}</text>
+
+  <!-- status footer -->
+  <rect x="0" y="450" width="900" height="30" fill="#161b22"/>
+  <text x="20" y="470" fill="#56d364" font-size="13" font-weight="600">● 200 OK</text>
+  <text x="130" y="470" fill="#d0d7de" font-size="12">· 1 update</text>
+  <text x="230" y="470" fill="#d0d7de" font-size="12">· 847ms</text>
+  <text x="320" y="470" fill="#d0d7de" font-size="12">· DC 149.154.166.110:443</text>
+  <text x="600" y="470" fill="#ffa657" font-size="12" font-weight="600">polling healthy ✓</text>
+</svg>

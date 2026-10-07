@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="ui-monospace,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e1e2e"/>
+      <stop offset="1" stop-color="#181825"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="420" fill="url(#bg)"/>
+
+  <text x="40" y="36" fill="#cdd6f4" font-size="18" font-weight="600" font-family="-apple-system,system-ui,sans-serif">Skills library</text>
+  <text x="40" y="58" fill="#a6adc8" font-size="13" font-family="-apple-system,system-ui,sans-serif">~118 bundled + custom | formato agentskills.io</text>
+
+  <rect x="40" y="90" width="820" height="44" rx="6" fill="#313244" stroke="#cba6f7" stroke-width="2"/>
+  <text x="60" y="118" fill="#cba6f7" font-size="14" font-weight="700">~/.hermes/profiles/&lt;perfil&gt;/skills/</text>
+
+  <!-- vertical connectors -->
+  <line x1="120" y1="134" x2="120" y2="170" stroke="#45475a" stroke-width="1.5"/>
+  <line x1="240" y1="134" x2="240" y2="170" stroke="#45475a" stroke-width="1.5"/>
+  <line x1="350" y1="134" x2="350" y2="170" stroke="#45475a" stroke-width="1.5"/>
+  <line x1="460" y1="134" x2="460" y2="170" stroke="#45475a" stroke-width="1.5"/>
+  <line x1="575" y1="134" x2="575" y2="170" stroke="#45475a" stroke-width="1.5"/>
+  <line x1="690" y1="134" x2="690" y2="170" stroke="#45475a" stroke-width="1.5"/>
+  <line x1="800" y1="134" x2="800" y2="170" stroke="#45475a" stroke-width="1.5"/>
+  <rect x="50" y="170" width="130" height="64" rx="6" fill="#313244" stroke="#94e2d5" stroke-width="1.5"/>
+  <text x="58" y="192" fill="#94e2d5" font-size="11" font-weight="700">productivity/marp/</text>
+  <line x1="56" y1="200" x2="174" y2="200" stroke="#45475a" stroke-width="1"/>
+  <text x="58" y="218" fill="#a6adc8" font-size="10">→ apresentacoes</text>
+  <rect x="170" y="170" width="130" height="64" rx="6" fill="#313244" stroke="#89b4fa" stroke-width="1.5"/>
+  <text x="178" y="192" fill="#89b4fa" font-size="11" font-weight="700">github/pr-workflow/</text>
+  <line x1="176" y1="200" x2="294" y2="200" stroke="#45475a" stroke-width="1"/>
+  <text x="178" y="218" fill="#a6adc8" font-size="10">→ PRs</text>
+  <rect x="280" y="170" width="130" height="64" rx="6" fill="#313244" stroke="#fab387" stroke-width="1.5"/>
+  <text x="288" y="192" fill="#fab387" font-size="11" font-weight="700">telegram-bot-ops/</text>
+  <line x1="286" y1="200" x2="404" y2="200" stroke="#45475a" stroke-width="1"/>
+  <text x="288" y="218" fill="#a6adc8" font-size="10">→ cuidar dos bots</text>
+  <rect x="390" y="170" width="130" height="64" rx="6" fill="#313244" stroke="#cba6f7" stroke-width="1.5"/>
+  <text x="398" y="192" fill="#cba6f7" font-size="11" font-weight="700">agents/jarbas/</text>
+  <line x1="396" y1="200" x2="514" y2="200" stroke="#45475a" stroke-width="1"/>
+  <text x="398" y="218" fill="#a6adc8" font-size="10">→ agente jarbas</text>
+  <rect x="505" y="170" width="130" height="64" rx="6" fill="#313244" stroke="#a6e3a1" stroke-width="1.5"/>
+  <text x="513" y="192" fill="#a6e3a1" font-size="11" font-weight="700">research/arxiv/</text>
+  <line x1="511" y1="200" x2="629" y2="200" stroke="#45475a" stroke-width="1"/>
+  <text x="513" y="218" fill="#a6adc8" font-size="10">→ busca papers</text>
+  <rect x="620" y="170" width="130" height="64" rx="6" fill="#313244" stroke="#f38ba8" stroke-width="1.5"/>
+  <text x="628" y="192" fill="#f38ba8" font-size="11" font-weight="700">diagnose-crash/</text>
+  <line x1="626" y1="200" x2="744" y2="200" stroke="#45475a" stroke-width="1"/>
+  <text x="628" y="218" fill="#a6adc8" font-size="10">→ debugar travamentos</text>
+  <rect x="730" y="170" width="130" height="64" rx="6" fill="#313244" stroke="#f9e2af" stroke-width="1.5"/>
+  <text x="738" y="192" fill="#f9e2af" font-size="11" font-weight="700">... ~118 bundled</text>
+  <line x1="736" y1="200" x2="854" y2="200" stroke="#45475a" stroke-width="1"/>
+  <text x="738" y="218" fill="#a6adc8" font-size="10">→ + customizadas</text>
+
+  <text x="40" y="280" fill="#cdd6f4" font-size="14" font-weight="600" font-family="-apple-system,system-ui,sans-serif">Cada skill = 1 pasta com SKILL.md (YAML frontmatter + corpo)</text>
+
+  <rect x="40" y="300" width="820" height="92" rx="8" fill="#313244" stroke="#45475a" stroke-width="1"/>
+  <text x="60" y="328" fill="#94e2d5" font-size="13" font-weight="700">---</text>
+  <text x="80" y="328" fill="#cdd6f4" font-size="12">name: diagnose-crash</text>
+  <text x="60" y="350" fill="#94e2d5" font-size="13" font-weight="700">---</text>
+  <text x="80" y="350" fill="#cdd6f4" font-size="12">description: Use when investigating crashes, BSODs,</text>
+  <text x="80" y="370" fill="#cdd6f4" font-size="12">  gateway loops, or system hangs on this Linux/Omarchy box.</text>
+</svg>
