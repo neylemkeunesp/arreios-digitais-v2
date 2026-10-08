@@ -70,32 +70,3 @@ jobs:
             arreios-digitais-v2.pptx
             arreios-digitais-v2-dark.pptx
           retention-days: 30
-
-  # Job opcional: deploy do HTML para GitHub Pages
-  deploy-pages:
-    name: Deploy to GitHub Pages
-    needs: build
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Build Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: |
-            arreios-digitais-v2-dark.html
-            assets/
-            package.json
-            README.md
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
