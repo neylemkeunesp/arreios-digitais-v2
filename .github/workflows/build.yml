@@ -1,0 +1,103 @@
+name: Build slides
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:        # permite build manual via UI
+
+jobs:
+  build:
+    name: Build HTML · PDF · PPTX
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install npm deps
+        run: npm install
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Setup Python venv
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install --quiet python-pptx
+
+      - name: Setup system deps (librsvg for SVG → PNG)
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+
+      - name: Build assets (SVG → PNG)
+        run: |
+          for svg in assets/*.svg; do
+            png="${svg%.svg}.png"
+            rsvg-convert -w 1200 "$svg" -o "$png"
+          done
+          echo "Generated $(ls assets/*.png | wc -l) PNGs"
+
+      - name: Build HTML
+        run: |
+          ./node_modules/.bin/marp arreios-digitais-v2.md     --html --allow-local-files -o arreios-digitais-v2.html
+          ./node_modules/.bin/marp arreios-digitais-v2-dark.md --html --allow-local-files -o arreios-digitais-v2-dark.html
+
+      - name: Build PDF
+        run: |
+          ./node_modules/.bin/marp arreios-digitais-v2.md     --pdf  --allow-local-files -o arreios-digitais-v2.pdf
+          ./node_modules/.bin/marp arreios-digitais-v2-dark.md --pdf  --allow-local-files -o arreios-digitais-v2-dark.pdf
+
+      - name: Build PPTX
+        run: .venv/bin/python scripts/build_pptx.py
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: arreios-slides
+          path: |
+            arreios-digitais-v2.html
+            arreios-digitais-v2-dark.html
+            arreios-digitais-v2.pdf
+            arreios-digitais-v2-dark.pdf
+            arreios-digitais-v2.pptx
+            arreios-digitais-v2-dark.pptx
+          retention-days: 30
+
+  # Job opcional: deploy do HTML para GitHub Pages
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Build Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: |
+            arreios-digitais-v2-dark.html
+            assets/
+            package.json
+            README.md
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

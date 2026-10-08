@@ -57,6 +57,17 @@ O `Makefile` gera automaticamente HTML, PDF (light + dark) e PPTX (light + dark)
 - **Light** (`arreios-digitais-v2.*`) — fundo branco, ideal para impressão
 - **Dark** (`arreios-digitais-v2-dark.*`) — fundo `#1e1e2e` (Catppuccin Mocha), ideal para projetor em sala escura
 
+## CI/CD
+
+O repo tem um workflow do GitHub Actions (`.github/workflows/build.yml`) que:
+
+- **Rebuilda automaticamente** HTML, PDF e PPTX a cada `push` na `main`
+- **Roda os testes** (lint do YAML) em cada PR
+- **Sobe artifacts** (os 6 outputs) com retenção de 30 dias
+- **Deploya no GitHub Pages** automaticamente (a versão dark como index)
+
+Para ver o último build: <https://github.com/neylemkeunesp/arreios-digitais-v2/actions>
+
 ## Licença
 
 Material autoral de Ney Lemke. Slides de código aberto (Hermes Agent) sob MIT.
