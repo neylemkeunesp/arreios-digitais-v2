@@ -627,6 +627,20 @@ Omarchy (Arch Linux baseado) é o **laboratório vivo** do Hermes — cada compo
 
 ---
 
+<!-- _paginate: false -->
+<!-- _backgroundColor: #f5f5f5 -->
+
+# Liberte-se
+
+> *"Emancipate yourselves from mental slavery.*
+> *None but ourselves can free our minds."*
+
+**— Bob Marley, *Redemption Song* (1980)**
+
+A engenharia de IA tem a mesma forma: **ninguém vai libertar seu workflow a não ser você mesmo**. Cada camada que você controla (SO, LLM, arreio, apps, bots) é uma camada de soberania que nenhum fornecedor pode tirar de você.
+
+---
+
 # Perguntas?
 
 **Ney Lemke**
